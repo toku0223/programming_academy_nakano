@@ -1,0 +1,32 @@
+/*ヘッダー*/
+
+.head1 {
+    width: 100%;
+    height: 20px;
+    background-color: blue;
+}
+
+.head2 {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    width: auto;
+    height: 30px;
+    color: white;
+    background-color: red;
+}
+
+.mail::before{
+    font-family: "Font Awesome 5 Free";
+    content: \\f0e0;
+    font-weight: 900;
+    color: white;
+}
+
+.ulhead{
+    display: flex;
+    list-style-type: none;
+}
