@@ -1,32 +1,191 @@
-/*ヘッダー*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    line-height: 300%;
+}
+
+hr {
+    width: 30%;
+    height: 5px;
+    border: none;
+}
+
+.wrap {
+    display: flex;
+}
+
+.wrapcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/*↓ヘッダー↓*/
 
 .head1 {
     width: 100%;
-    height: 20px;
-    background-color: blue;
+    line-height: 150%;
+    background-color: #0c3966;
+}
+
+.head1text {
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 20%;
+    color: white;
 }
 
 .head2 {
+    width: 100%;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    line-height: 100%;
+    align-items: center;
+}
+
+.headimg {
+    width: 20%;
+    margin-left: 2.5%;
+}
+
+.ulhead {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2.5%;
+}
+
+.ulhead li {
+    margin: 0 3%;
 }
 
 .contact {
-    width: auto;
-    height: 30px;
+    text-align: center;
+    white-space: nowrap;
     color: white;
+    line-height: 200%;
+    padding: 0 50px;
+    border-radius: 20px;
     background-color: red;
 }
 
 .mail::before{
     font-family: "Font Awesome 5 Free";
-    content: \\f0e0;
+    content: "\f0e0";
     font-weight: 900;
     color: white;
 }
 
-.ulhead{
+/*↓キービジュアル↓*/
+
+.keyimg {
+    width: 100vw;
     display: flex;
+}
+
+/*特典*/
+
+.box1 {
+    width: 100%;
+    height: 300px;
+    background-color: #0c3966;
+}
+
+.keyleft {
+    width: 55%;
+    position: left;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.key-box1 {
+    color: orangered;
+    background-color: #fffce6;
+    line-height: 200%;
+}
+
+.h2s::before {
+    content: "\\";
+}
+
+.h2s::after {
+    content: "\/";
+}
+
+.ulredbox {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
+}
+
+.ulredbox li {
+    width: 96px;
+    height: 49px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+}
+
+.graybox {
+    width: 25%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 25px 5%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: gray;
+    display: flex;
+}
+
+/*商品画像*/
+
+.box2{
+    width: 100%;
+    height: 500px;
+    background-color: #fffce6;
+}
+
+.cartitle {
+    text-align: center;
+    color: orangered;
+}
+
+.caricon {
+    margin: -20px;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caricon::before, .caricon::after {
+    border-top: 2px solid;
+    content: "";
+    width: 20%;
+}
+
+.caricon::before {
+    margin-right: 5%;
+}
+
+.caricon::after {
+    margin-left: 5%;
 }
