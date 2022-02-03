@@ -8,6 +8,10 @@ span {
     font-size: 150%;
 }
 
+p {
+    margin: 0;
+}
+
 h1 {
     margin: 0;
     padding: 20px;
@@ -17,6 +21,10 @@ h2 {
     color: white;
     margin: 0;
     line-height: 300%;
+}
+
+h3 {
+    margin: 0;
 }
 
 hr {
@@ -108,7 +116,6 @@ hr {
 
 .keyleft {
     width: 55%;
-    position: left;
     margin: 0 5%;
     text-align: center;
 }
@@ -188,4 +195,36 @@ hr {
 
 .caricon::after {
     margin-left: 5%;
+}
+
+/*商品画像*/
+
+.ulcar {
+    margin: 30px 0;
+    display: flex;
+    list-style-type: none;
+    width: 87%;
+}
+
+.ulcar li {
+    width: 30%;
+    margin: 0 10%;
+}
+
+.cartop {
+    text-align: right;
+    color: orangered;
+}
+
+.carbottom {
+    text-align: left;
+    color: black;
+}
+
+/*copyright*/
+
+.copybox {
+    background-color: rgb(55, 41, 255);
+    line-height: 100%;
+    text-align: left;
 }
