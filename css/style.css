@@ -33,6 +33,10 @@ hr {
     border: none;
 }
 
+ul {
+    padding: 0;
+}
+
 .wrap {
     display: flex;
 }
@@ -42,7 +46,7 @@ hr {
     flex-direction: column;
 }
 
-/*↓ヘッダー↓*/
+/*head*/
 
 .head1 {
     width: 100%;
@@ -51,30 +55,28 @@ hr {
 }
 
 .head1text {
-    text-align: right;
-    vertical-align: middle;
-    margin-right: 20%;
+   text-align: right;
+    margin-right: 15%;
     color: white;
 }
 
 .head2 {
     width: 100%;
     display: flex;
-    line-height: 100%;
     align-items: center;
 }
 
 .headimg {
     width: 20%;
-    margin-left: 2.5%;
+    justify-content: flex-start;
+    margin: 1% 5%;
 }
 
 .ulhead {
-    width: 80%;
+    width: 70%;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     margin-right: 2.5%;
 }
 
@@ -87,7 +89,7 @@ hr {
     white-space: nowrap;
     color: white;
     line-height: 200%;
-    padding: 0 50px;
+    padding: 0 30px;
     border-radius: 20px;
     background-color: red;
 }
@@ -110,13 +112,13 @@ hr {
 
 .box1 {
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: #0c3966;
 }
 
 .keyleft {
     width: 55%;
-    margin: 0 5%;
+    margin: 0 5% 20px;
     text-align: center;
 }
 
@@ -135,16 +137,18 @@ hr {
 }
 
 .ulredbox {
-    width: 92%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
 .ulredbox li {
-    width: 96px;
-    height: 49px;
-    text-align: center;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     color: white;
     background-color: orangered;
@@ -152,9 +156,9 @@ hr {
 
 .graybox {
     width: 25%;
-    height: 250px;
+    height: auto;
     border-radius: 10px;
-    margin: 25px 5%;
+    margin: 50px 5%;
     justify-content: center;
     align-items: center;
     color: white;
@@ -166,7 +170,8 @@ hr {
 
 .box2{
     width: 100%;
-    height: 500px;
+    padding-bottom: 50px;
+    height: auto;
     background-color: #fffce6;
 }
 
@@ -176,7 +181,6 @@ hr {
 }
 
 .caricon {
-    margin: -20px;
     color: orangered;
     display: flex;
     justify-content: center;
@@ -200,15 +204,19 @@ hr {
 /*商品画像*/
 
 .ulcar {
-    margin: 30px 0;
+    margin: 20px 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
-    width: 87%;
 }
 
 .ulcar li {
-    width: 30%;
-    margin: 0 10%;
+    margin: 0 3%;
+}
+
+.imgcar {
+    width: 100%;
 }
 
 .cartop {
@@ -227,4 +235,254 @@ hr {
     background-color: rgb(55, 41, 255);
     line-height: 100%;
     text-align: left;
+}
+
+/*tab(width=1024px以下)*/
+@media screen and (max-width:1024px){
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    span {
+        font-weight: bold;
+        font-size: 150%;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    h1 {
+        margin: 0;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 100%;
+        color: white;
+        margin: 0;
+        line-height: 300%;
+    }
+    
+    h3 {
+        margin: 0;
+    }
+    
+    hr {
+        width: 30%;
+        height: 5px;
+        border: none;
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    .wrap_tab {
+        display: flex;
+    }
+    
+    .wrapcolumn_tab {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*head*/
+    
+    .head1 {
+        width: 100%;
+        line-height: 150%;
+        background-color: #0c3966;
+    }
+    
+    .head1text {
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+    
+    .head2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .headimg {
+        width: 40%;
+        margin: 20px;
+    }
+    
+    .ulhead {
+        width: 80%;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ulhead li {
+        margin: 1% 3%;
+    }
+    
+    .contact {
+        text-align: center;
+        white-space: nowrap;
+        color: white;
+        line-height: 200%;
+        padding: 0 30px;
+        border-radius: 20px;
+        background-color: red;
+    }
+    
+    .mail::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f0e0";
+        font-weight: 900;
+        color: white;
+    }
+    
+    /*↓キービジュアル↓*/
+    
+    .keyimg {
+        width: 100vw;
+        display: flex;
+    }
+    
+    /*特典*/
+    
+    .wrap_tab {
+        display: flex;
+    }
+
+    .box1 {
+        width: 100%;
+        height: auto;
+        background-color: #0c3966;
+    }
+    
+    .keyleft {
+        width: 55%;
+        margin: 0 5% 20px;
+        text-align: center;
+    }
+    
+    .key-box1 {
+        color: orangered;
+        background-color: #fffce6;
+        line-height: 200%;
+    }
+    
+    .h2s::before {
+        content: "\\";
+    }
+    
+    .h2s::after {
+        content: "\/";
+    }
+    
+    .ulredbox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    .ulredbox li {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        background-color: orangered;
+    }
+    
+    .graybox {
+        width: 25%;
+        height: auto;
+        border-radius: 10px;
+        margin: 50px 5%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: gray;
+        display: flex;
+    }
+    
+    /*商品画像*/
+    
+    .box2{
+        width: 100%;
+        padding-bottom: 50px;
+        height: auto;
+        background-color: #fffce6;
+    }
+    
+    .cartitle {
+        text-align: center;
+        color: orangered;
+    }
+    
+    .caricon {
+        color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .caricon::before, .caricon::after {
+        border-top: 2px solid;
+        content: "";
+        width: 20%;
+    }
+    
+    .caricon::before {
+        margin-right: 5%;
+    }
+    
+    .caricon::after {
+        margin-left: 5%;
+    }
+    
+    /*商品画像*/
+    
+    .ulcar {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+    .ulcar li {
+        margin: 0 3%;
+    }
+    
+    .imgcar {
+        width: 100%;
+    }
+    
+    .cartop {
+        text-align: right;
+        color: orangered;
+    }
+    
+    .carbottom {
+        text-align: left;
+        color: black;
+    }
+    
+    /*copyright*/
+    
+    .copybox {
+        background-color: rgb(55, 41, 255);
+        line-height: 100%;
+        text-align: left;
+    }
+
 }
